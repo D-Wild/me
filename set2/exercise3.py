@@ -2,15 +2,18 @@
 """Modify each function until the tests pass."""
 
 
+import string
+
+
 def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    return None
+    return (a_number % 2 == 1)
 
 
-def fix_it(moves=True, should_move=True):
+def fix_it(moves=True or False, should_move=True or False):
     """Decide what to do.
 
     Using the engineering flowchart (in week2 folder of the CODE1161-2019
@@ -25,7 +28,17 @@ def fix_it(moves=True, should_move=True):
     Most people write this function with 4 return statements. 
     As an extra challenge, see if you can get that down to three.
     """
-    return None
+    if moves and should_move: 
+        return "No Problem"    
+    elif moves and not should_move:
+        return "Duct Tape"    
+    elif not moves and should_move:
+        return "WD-40"
+    elif not moves and not should_move:
+        return "No Problem"
+
+
+
 
 
 def loops_1a():
@@ -35,8 +48,12 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
+    STAR = []
 
+    for STARROW in range (0, 10):
+        STAR.append("*")
+
+    return STAR
 
 def loops_1c(number_of_items=5, symbol="#"):
     """Respond to variables.
@@ -45,7 +62,12 @@ def loops_1c(number_of_items=5, symbol="#"):
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    return None
+    HASH = []
+
+    for HASHROW in range (number_of_items):
+        HASH.append(symbol)
+
+    return HASH
 
 
 def loops_2():
@@ -66,7 +88,15 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    starss = []
+    final = []
+
+    for STARROW in range (0, 10):
+        starss.append("*")
+    for l in range (0, 10):
+        final.append(starss)
+
+    return final
 
 
 def loops_3():
@@ -90,7 +120,8 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+
+
 
 
 def loops_4():
