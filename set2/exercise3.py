@@ -120,7 +120,14 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
+    number_square = []
+    for y in range(10):
+        number_row = []
+        for x in range(10):
+            number_row.append(str(y))
+        number_square.append(number_row)
 
+    return number_square
 
 
 
@@ -141,7 +148,14 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    number_square = []
+    for y in range(10):
+        number_row = []
+        for x in range(10):
+            number_row.append(str(x))
+        number_square.append(number_row)
+
+    return number_square
 
 
 def loops_5():
@@ -168,7 +182,14 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    return None
+    number_square = []
+    for y in range(10):
+        coordinates_row = []
+        for x in range(5):
+            coordinates_row.append("(i" + str(y) + ", j" + str(x) + ")")
+        number_square.append(coordinates_row)
+
+    return number_square
 
 
 def loops_6():
@@ -191,7 +212,14 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    number_wedge = []
+    for y in range(10):
+        row = []
+        for x in range(y+1):
+            row.append(str(x))
+        number_wedge.append(row)
+
+    return number_wedge
 
 
 def loops_7():
@@ -215,7 +243,17 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+    pyramid = []
+    for y in range(5):
+        number_row = []
+        for x in range(9):
+            if abs(x-4) <= y:
+                number_row.append('*')
+            else:
+                number_row.append(' ')
+        pyramid.append(number_row)
+
+    return pyramid
 
 
 def little_printer(some_kind_of_list, exercise_name):
