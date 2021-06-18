@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+I had to work backwards with a lot of the answers but I believe that I will be able to use the commands and tools for the future
