@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+Wk3 was more difficult but i also understood more then i did previously

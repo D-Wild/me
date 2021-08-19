@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+It was intreseting to go through the excersies with Ben and a more efficant way of writing the code 
